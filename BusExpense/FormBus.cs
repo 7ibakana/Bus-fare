@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BusExpense
 {
-    public partial class Form1 : Form
+    public partial class FormBus : Form
     {
-        public Form1()
+        public FormBus()
         {
             InitializeComponent();
         }
