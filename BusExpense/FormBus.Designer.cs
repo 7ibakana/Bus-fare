@@ -41,7 +41,7 @@
             this.btnCalculate.Location = new System.Drawing.Point(149, 118);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 0;
+            this.btnCalculate.TabIndex = 1;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
@@ -51,7 +51,8 @@
             this.txtTrips.Location = new System.Drawing.Point(149, 20);
             this.txtTrips.Name = "txtTrips";
             this.txtTrips.Size = new System.Drawing.Size(100, 20);
-            this.txtTrips.TabIndex = 1;
+            this.txtTrips.TabIndex = 0;
+            this.txtTrips.TabStop = false;
             this.txtTrips.Text = "10";
             this.txtTrips.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -62,6 +63,7 @@
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
             this.txtTotal.TabIndex = 2;
+            this.txtTotal.TabStop = false;
             // 
             // label1
             // 
@@ -86,13 +88,14 @@
             this.btnExit.Location = new System.Drawing.Point(149, 167);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 5;
+            this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FormBus
             // 
+            this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Fuchsia;
