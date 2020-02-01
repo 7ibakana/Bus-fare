@@ -24,18 +24,18 @@ namespace BusExpense
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            double busFare = 2.0;
+            double busFare = 2.0; //declaring the busFare variable to double a 2.0 fare
 
-            int trips;
+            int trips; //Declaring trips variable as an integer
 
-            if (Int32.TryParse(txtTrips.Text, out trips))
+            if (Int32.TryParse(txtTrips.Text, out trips)) //if string is converted to int succeeds in the trips text and returns the calculation in the trips variable then do the math
             {
-                double total = busFare * trips;
-                txtTotal.Text = "$" + total;
+                double total = busFare * trips; //the bus fare which is 2.0 multiply by the amount in trips to get the total which could be a very large number
+                txtTotal.Text = "$" + total; //the $ sign plus the total is the text that will appear in the txtTotal text box
             }
-            else
+            else //if whats entered is not an integer then
             {
-                MessageBox.Show("Enter only numbers", "Error");
+                MessageBox.Show("Enter only numbers", "Error"); //Display the messagebox with the error as follows
             }
         }
 
